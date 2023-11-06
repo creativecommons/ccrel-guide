@@ -69,7 +69,7 @@
 
       <p>Validating your RDFa can help you catch syntax errors or other problems with your metadata. For more information on RDFa validation, see the <a href="http://rdfa.info/wiki/How-to-validate">How-tovalidate page</a> on the RDFa wiki.</p>
 
-    <p xmlns:cc="https://creativecommons.org/ns#"
+    <p xmlns:cc="http://creativecommons.org/ns#"
        xmlns:dct="http://purl.org/dc/terms/">This resource contains material adapted from 
       <a href="https://creativecommons.org/projects/ccrel" 
 	 rel="dct:source"><span property="dct:title">ccREL: The Creative Commons Rights Expression Language</span></a> by 
@@ -148,7 +148,7 @@ is licensed under a
       </tr>
       <tr>
 	<td>
-	  <div class="code">&lt;div <span class="hl">xmlns:cc="https://creativecommons.org/ns#"</span>&gt;
+	  <div class="code">&lt;div <span class="hl">xmlns:cc="http://creativecommons.org/ns#"</span>&gt;
   &lt;a rel="license" href="https://creativecommons.org/licenses/by/3.0/"&gt; 
     &lt;img src="https://i.creativecommons.org/l/by/3.0/88x31.png" /&gt; 
   &lt;/a&gt; 
@@ -187,7 +187,7 @@ is licensed under a
       <tr>
 	<td>
 	  <div class="code">&lt;div <span class="hl">about=""</span> <span class="hl">typeof="cc:Work"</span>
-     xmlns:cc="https://creativecommons.org/ns#"
+     xmlns:cc="http://creativecommons.org/ns#"
      <span class="hl">xmlns:dct="http://purl.org/dc/terms/"&gt;</span>
   &lt;a rel="license" href="https://creativecommons.org/licenses/by/3.0/"&gt;
     &lt;img src="https://i.creativecommons.org/l/by/3.0/88x31.png" /&gt;
@@ -212,7 +212,7 @@ is licensed under a
 	  <ul>
 	    <li><tt>about</tt> defines the subject of all triples within the <tt>div</tt>. Here we have <tt>about=""</tt>, which defines the subject to be the URL of the current document. When making assertions about the current document, or current URL, you do not need to specify that <tt>about=""</tt>. It is included here for completeness.</li>
 	    <li><tt>typeof="cc:Work"</tt> indicates that the current resource has the class of <tt>cc:Work</tt>, which in the <tt>http://creativecommons.org/ns#</tt> namespace is described as "a potentially copyrightable work".</li>
-	    <li>In addition to the cc namespace declaration (<tt>xmlns:cc="https://creativecommons.org/ns#"</tt>), we declare the Dublin Core Terms namespace (<tt>xmlns:dct="http://purl.org/dc/terms/"</tt>). This puts many more terms at our disposal.</li>
+	    <li>In addition to the cc namespace declaration (<tt>xmlns:cc="http://creativecommons.org/ns#"</tt>), we declare the Dublin Core Terms namespace (<tt>xmlns:dct="http://purl.org/dc/terms/"</tt>). This puts many more terms at our disposal.</li>
 	    <li>Because we've declared the <tt>dct</tt> namespace, we can use terms like <tt>dct:title</tt>. We've embedded it in a <tt>span</tt> with the <tt>property</tt> attribute. The object of this assertion (that the current document has a <tt>dct:title</tt>) would be the <em>literal</em> between the <tt>span</tt> tags. In this case, the literal is <tt>The Lessig Blog</tt>. As noted above: Be careful not to include unnecessary whitespace in your literals, as this would change the assertion you are making.</li>
 	  </ul>
 	  <h5>Read More</h5>
@@ -274,7 +274,7 @@ is licensed under a
 	<td>
 	  <div class="code">&lt;div <span class="hl">about="CC_image.png"</span> 
      <span class="hl">xmlns:dct="http://purl.org/dc/terms/"</span>
-     xmlns:cc="https://creativecommons.org/ns#"&gt; 
+     xmlns:cc="http://creativecommons.org/ns#"&gt; 
   &lt;img src="CC_image.png" height="200px" /&gt; 
   &lt;br /&gt; 
   This image, entitled 
@@ -312,7 +312,7 @@ is licensed under a
       <tr>
 	<td>
 	  <div class="code">&lt;div <span class="hl">about="http://mirrors.creativecommons.org/movingimages/webm/ASharedCulture_240p.webm"</span>
-     xmlns:cc="https://creativecommons.org/ns#"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dct="http://purl.org/dc/terms/"&gt; 
   &lt;video width="426" height="240" preload="none" controls&gt; 
     &lt;source <span class="hl">src="http://mirrors.creativecommons.org/movingimages/webm/ASharedCulture_240p.webm"</span>
@@ -347,7 +347,7 @@ is licensed under a
       <tr>
 	<td>
 	  <div class="code">&lt;div <span class="hl">about="http://mirrors.creativecommons.org/movingimages/webm/ASharedCulture_240p.webm"</span>
-     xmlns:cc="https://creativecommons.org/ns#"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dct="http://purl.org/dc/terms/"&gt; 
   &lt;video width="426" height="240" preload="none" controls&gt; 
     &lt;source <span class="hl">src="http://mirrors.creativecommons.org/movingimages/webm/ASharedCulture_240p.webm"</span>
@@ -420,7 +420,7 @@ is licensed under a
       <tr>
 	<td>
 	  <div class="code">&lt;div <span class="hl">about="http://blip.tv/play/gpxSyZQBAg"</span>
-     xmlns:cc="https://creativecommons.org/ns#"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dct="http://purl.org/dc/terms/"&gt;
   &lt;embed <span class="hl">src="http://blip.tv/play/gpxSyZQBAg"</span>
          type="application/x-shockwave-flash"
@@ -461,7 +461,7 @@ is licensed under a
       <tr>
 	<td>
 	  <div class="code">&lt;div <span class="hl">about="example_dataset.csv"</span> 
-     xmlns:cc="https://creativecommons.org/ns#"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dct="http://purl.org/dc/terms/"&gt; 
   &lt;a href="example_dataset.csv"&gt;Download Example Dataset&lt;/a&gt; 
   &lt;br /&gt; 
@@ -493,7 +493,7 @@ is licensed under a
       <tr>
 	<td>
 	  <div class="code">&lt;div <span class="hl">about="example_dataset.csv"</span>
-     xmlns:cc="https://creativecommons.org/ns#"
+     xmlns:cc="http://creativecommons.org/ns#"
      xmlns:dct="http://purl.org/dc/terms/"
      <span class="hl">xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"</span>&gt;
   &lt;a href="example_dataset.csv"&gt;Download Example Dataset&lt;/a&gt;
@@ -546,7 +546,7 @@ is licensed under a
       <tr>
 	<td>
 	  <div class="code">&lt;div xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:cc="https://creativecommons.org/ns#"&gt;
+     xmlns:cc="http://creativecommons.org/ns#"&gt;
   &lt;div <span class="hl">about="CC_image.png"</span>&gt;
     &lt;img src="CC_image.png" height="200px" /&gt;
     &lt;br /&gt;
@@ -644,7 +644,7 @@ is licensed under a
      xmlns:dct="http://purl.org/dc/terms/"&gt;
   &lt;div about="CC_image.png"
        xmlns:dct="http://purl.org/dc/terms/"
-       xmlns:cc="https://creativecommons.org/ns#"&gt;
+       xmlns:cc="http://creativecommons.org/ns#"&gt;
     &lt;img src="CC_image.png" height="200px" /&gt;
     &lt;br /&gt;
     &lt;span property="dct:title"&gt;Sharing Creative Works&lt;/span&gt;,
@@ -702,7 +702,7 @@ is licensed under a
       <tr>
 	<td>
 	  <div class="code">&lt;div xmlns:dct="http://purl.org/dc/terms/"
-     xmlns:cc="https://creativecommons.org/ns#"
+     xmlns:cc="http://creativecommons.org/ns#"
      <span class="hl">xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"</span>&gt; 
   &lt;a rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/"&gt; 
     &lt;img src="https://i.creativecommons.org/l/zero/1.0/88x31.png" 
@@ -808,7 +808,7 @@ is licensed under a
 &lt;span xmlns:dct="http://purl.org/dc/terms/"
       property="dct:title"&gt;Example Work&lt;/span&gt;
 by
-&lt;a xmlns:cc="https://creativecommons.org/ns#"
+&lt;a xmlns:cc="http://creativecommons.org/ns#"
    href="https://creativecommons.org/"
    property="cc:attributionName"
    rel="cc:attributionURL"&gt;Creative Commons&lt;/a&gt;
@@ -839,7 +839,7 @@ is licensed under a
     
   </div>
   <div about=""
-       xmlns:cc="https://creativecommons.org/ns#"
+       xmlns:cc="http://creativecommons.org/ns#"
        xmlns:dct="http://purl.org/dc/terms/" id="footer" typeof="cc:Work">
     <p><b><span property="dct:title">Implementing Creative Commons License Metadata</span></b> is produced and maintained by 
       <a property="cc:attributionName" rel="cc:attributionURL dct:creator" href="https://creativecommons.org/">Creative Commons</a> 
